@@ -456,6 +456,10 @@ margin on the iframe, cause it breaks stuff. */
 #sidebar-content {
     position: relative;
     top: 4rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
 }
 
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
@@ -510,6 +514,7 @@ margin on the iframe, cause it breaks stuff. */
     font-family: 'Open Sans', sans-serif;
     text-shadow: 0 1px 6px rgba(0,0,0,0.1);
     text-indent: 0px;
+    font-size: 28px;
 }
 
 .blog-title a {
@@ -519,7 +524,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .blog-description {
     color: #BBC4C9;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.3em;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif;
@@ -575,11 +580,34 @@ margin on the iframe, cause it breaks stuff. */
     text-decoration: none;
 }
 
+.post-author {
+    margin: 8px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.4em;
+    color: #9EABB3;
+}
+
+.post-author a {
+    color: #9EABB3;
+    text-decoration: none;
+}
+
+.post-author a:hover {
+    text-decoration: underline;
+}
+
+.post-author i
+{
+    width: 18px;
+    font-size: 14px;
+}
+
 .post-meta {
     display: inline-block;
     margin: 8px 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.4em;
     color: #9EABB3;
 }
@@ -847,6 +875,9 @@ main
     line-height: 1.6em;
 }
 
+.post-footer a {
+}
+
 /* list of author links - location / url */
 .author-meta {
     padding: 0;
@@ -867,7 +898,7 @@ main
 
 /* Create some space to the right for the share links */
 .post-footer .author {
-    margin-right: 180px;
+    margin-right: 350px;
 }
 
 /* Drop the share links in the space to the right.
@@ -878,7 +909,7 @@ main
     position: absolute;
     top: 4rem;
     right: 0;
-    width: 140px;
+    width: 300px;
     text-align: center;
 }
 
@@ -1177,6 +1208,11 @@ main
     color: white;
 }
 
+.site-footer .sidebar-license {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
 .poweredby .icon-ghost {
     font-weight: 700;
     text-decoration: none;
@@ -1412,7 +1448,7 @@ main
     }
 
     .post-meta {
-        font-size: 13px;
+        font-size: 20px;
     }
 
     .post-meta i
